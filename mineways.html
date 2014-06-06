@@ -74,7 +74,7 @@ Normally you can just hit "OK" on the export dialog and things will work fine. R
  <LI><a href="#models">Stuff to Print</a> - where to get models and worlds.
  <LI><a href="#packages">Other Packages</a> - other model exporters and related software.
 </UL>
-<LI><a href="#shortcuts">Shortcut Keys</a> - along with quick descriptions of various features.
+<LI><a href="#shortcuts">Keyboard Shortcut Keys</a> - along with quick descriptions of various features.
 <LI><a href="#blocks">Block Types Supported</a> - how various block types are exported.
 <LI><a href="#bugs">Known Bugs</a> - and workarounds, so check here if you have a problem loading, saving, etc.
 <LI><a href="#versions">Version History</a>
@@ -112,7 +112,7 @@ If something goes wrong, here's the checklist I go through with people:
 <LI>Did you <a href="http://realtimerendering.com/erich/minecraft/public/mineways/mineways.zip">download the latest version</a>? Mineways has undergone many bug fixes.
 <LI>Did you read any warnings from the program carefully?
 <LI>Try the program one more time, just to be sure. Sometimes starting fresh clears out some box inadvertantly checked, or untangles some hidden program bug.
-<LI>If you're on a Mac, <a href="index.html#mac">see this information</a> for how to run Mineways.
+<LI>If you're on a Mac, <a href="downloads.html#mac">see this information</a> for how to run Mineways.
 </UL>
 <P>
 Here are some common problems:
@@ -146,6 +146,7 @@ Double-click the mineways.exe to run the program. Here's basic map use:
 <P>
 <h3 id="schemes">Color Schemes</h3> 
 Color schemes allows you to change the color for any block, and - extremely useful for 3d printing - remove any blocks you want from view. <b>Key tip:</b> you can eliminate all glass from your model by setting its alpha to 0 in a color scheme. <a href="http://www.youtube.com/watch?v=9ZJZMZEfEC0&t=7m20s">This part of this video</a> shows how to use color schemes to do this.
+</P>
 <P>
 How do use a color scheme: From the menu, Add a new color scheme, then Edit it. Change the name "Color Scheme" at the top of the dialog that pops up to something useful, then select any block type to edit it. Color is given in <a href="http://en.wikipedia.org/wiki/Hexadecimal_color">hexadecimal color format</a>. You can use <a href="http://www.mirekw.com/winfreeware/mwsnap.html">MWSnap</a> (old but free), <a href="http://www.faststone.org/FSCapturerDownload.htm">FastStone Capture</a> (new but costs $20), or other programs to find the hexadecimal (e.g. #787878) color value of any pixel on your screen. 'Alpha' says how opaque a block will appear on the screen, with 255 meaning fully opaque and 0 meaning fully transparent (invisible). <I>Blocks with an alpha of 0 will be deleted when exporting.</I> You can turn off export of <i>all</i> blocks by using the "Hide All Blocks" button. This feature allows you to create separate parts, e.g. a glass roof could be created by then turning on just glass export.
 <P>
@@ -199,6 +200,7 @@ Mineways' schematic export option</a> allows you to easily grab a volume of your
 "My Model's Too Expensive!"
 </H3>
 If you export to print and upload to Shapeways, you might be surprised to find that the price is sometimes just shy of a used car. For example, <a href="http://www.shapeways.com/model/422470/spawn.html?gid=ug">this model of our spawn area</a> is 15 x 9.8 inches in size (about 190 x 125 blocks, 2 mm wide), and costs $633.14. Expensive models happen because either the model is too small, or too large. The problem with models with only a few blocks in them is that you'll then scale it up to see it: each block itself is then massive. You have to pay for each block's volume. Mineways can't help you much there, you'll need to use a CAD program to hollow out your object manually. Shapeways has <a href="http://www.shapeways.com/tutorials/creating-hollow-objects">a tutorial on hollowing</a>.
+</P>
 <P>
 The more common problem you can hit is the blocks are not small enough.
 This happens with larger models, those 100+ hour darlings you sweated over in Minecraft. The cause is that, by default, Mineways exports the model to print at a safe size. Colored sandstone has a <a href="http://www.shapeways.com/tutorials/3dprintingminimumwallthicknesstutorial">thin wall dimension</a> of 2 millimeters. This means if some wall in your model is less than 2 mm thick, it is in danger of breaking into pieces if printed in color.
@@ -241,6 +243,7 @@ There is a bewildering dialog that pops up on export, with a ton of options. You
 # Selection location: -80, 72, 66 to -66, 127, 104
 </PRE>
 By putting these numbers in the 6 coordinate boxes, you can easily continue to work on a model between Mineways sessions. If you want to know the location of a place in your world, use the F3 key when playing Minecraft. Note that negative values like -5.239 will round down to -6, and also note that your Y-value altitude is one higher than where your feet are located, and so two higher than the ground beneath you.
+</P>
 <P>
 <b>Create a ZIP:</b> like it says, when exporting for 3d printing a ZIP file of the exported files is created, ready for upload for 3d printing at Shapeways or other service.
 <P>
@@ -606,7 +609,7 @@ Rendering Tips
 <div id="renderTips">
   <p>
   This section covers the basics on importing Mineways files into various renderers.
-  To be honest, if you want better geometry, <b>you should use <a href="#packages">jmc2obj</a></b>
+  To be honest, if you want better geometry, you should use <a href="#packages">jmc2obj</a>
   </p>
   <p>. Mineways' focus is on 3D printing more than rendering, so objects such as fences are simplified to blocks in Mineways. The one feature that Mineways offers animators that is currently not in other exporters is the </p>
   <a href="#individual">"individual blocks" option</a>
@@ -919,7 +922,7 @@ Mineways is not the first to offer a Minecraft model exporter, nor the best for 
 </li>
 </ul>
 
-<h2 id="shortcuts">Shortcut keys</h2>
+<h2 id="shortcuts">Keyboard Shortcut Keys</h2>
 Most operations can be done with the mouse: left button and mousewheel for viewing, middle mouse button for setting the depth to whatever is at that location, right mouse selects a region to export - more on this in the <a href="#select">Selection section</a>.
 <ul>
 <li><b>WASD</b> and <b>the arrow keys</b> move around.
@@ -928,7 +931,7 @@ Most operations can be done with the mouse: left button and mousewheel for viewi
 </li><li><b>&lt;</b> and <b>&gt;</b> move the altitude slider up and down.
 </li><li><b>0</b>-<b>9</b> move the altitude slider larger amounts.
 </li><li><b>B</b> sets the export lower depth to whatever the slider is at. Use the slider to go to the altitude desired, then push the 'B' key.
-</li><li><b>[</b> and <b>]</b> moves the lower depth up/down by one level.
+</li><li>"[" and "]" moves the lower depth up/down by one level. Very handy for changing the bottom of your box!
 </li><li><b>Ctrl-O</b> opens a world file, for when the world file is in some non-standard place.
 </li><li><b>Ctrl-R</b> saves a 3D model file for rendering, e.g., water is made transparent.
 </li><li><b>Ctrl-P</b> saves a 3D model file for 3D printing at <a href="http://www.shapeways.com/upload/">Shapeways</a>, <a href="http://sculpteo.com">Sculpteo</a>, or other 3D print service or printer.
