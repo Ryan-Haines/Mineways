@@ -8,6 +8,11 @@
 
 	#mineways-header-image{
 		padding-bottom:10px;
+        img{
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
 	}
 
 	p, span, a{
@@ -15,9 +20,10 @@
 	}
 
 	#navbar{
+		max-width:100%;
 		.menuDrawer{
 			text-align:left;
-			width:260px;
+			width:31%;
 			padding:10px 0;
 			position:relative;
 			display:inline-block;
